@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.1c3b6707.css",
-    "main.js": "/static/js/main.b9a75d83.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
-    "static/media/person4.jpg": "/static/media/person4.0714aa8306baf7aa54a3.jpg",
-    "static/media/person2.jpg": "/static/media/person2.e797c3cf955dc02a004a.jpg",
-    "static/media/person3.jpg": "/static/media/person3.69afec998d7fb1cc321c.jpg",
-    "static/media/person1.jpg": "/static/media/person1.e371e7bd46cf988490c4.jpg",
-    "static/media/sam.webp": "/static/media/sam.70ba45434e5788ca5c4d.webp",
-    "static/media/maria.webp": "/static/media/maria.2918a892a366536f6702.webp",
-    "static/media/natasha.webp": "/static/media/natasha.799fc731159af5dfd32c.webp",
-    "static/media/garry.webp": "/static/media/garry.6ddcc107c7499a27ef6b.webp",
-    "static/media/logo.svg": "/static/media/logo.135c9e507221de7620eefd24ddf8db89.svg",
-    "index.html": "/index.html",
-    "main.1c3b6707.css.map": "/static/css/main.1c3b6707.css.map",
-    "main.b9a75d83.js.map": "/static/js/main.b9a75d83.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+    "main.css": "/roomsy/static/css/main.1c3b6707.css",
+    "main.js": "/roomsy/static/js/main.a417fda3.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/roomsy/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/person4.jpg": "/roomsy/static/media/person4.0714aa8306baf7aa54a3.jpg",
+    "static/media/person2.jpg": "/roomsy/static/media/person2.e797c3cf955dc02a004a.jpg",
+    "static/media/person3.jpg": "/roomsy/static/media/person3.69afec998d7fb1cc321c.jpg",
+    "static/media/person1.jpg": "/roomsy/static/media/person1.e371e7bd46cf988490c4.jpg",
+    "static/media/sam.webp": "/roomsy/static/media/sam.70ba45434e5788ca5c4d.webp",
+    "static/media/maria.webp": "/roomsy/static/media/maria.2918a892a366536f6702.webp",
+    "static/media/natasha.webp": "/roomsy/static/media/natasha.799fc731159af5dfd32c.webp",
+    "static/media/garry.webp": "/roomsy/static/media/garry.6ddcc107c7499a27ef6b.webp",
+    "static/media/logo.svg": "/roomsy/static/media/logo.135c9e507221de7620eefd24ddf8db89.svg",
+    "index.html": "/roomsy/index.html",
+    "main.1c3b6707.css.map": "/roomsy/static/css/main.1c3b6707.css.map",
+    "main.a417fda3.js.map": "/roomsy/static/js/main.a417fda3.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/roomsy/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c3b6707.css",
-    "static/js/main.b9a75d83.js"
+    "static/js/main.a417fda3.js"
   ]
 }
