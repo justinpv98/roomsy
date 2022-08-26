@@ -1,0 +1,70 @@
+@use '../abstracts' as * ;
+
+:root,
+::before,
+::after {
+  /* Color generating loop */
+  @each $color-type, $shades in $colors {
+    @each $weight, $color in $shades {
+      --color-#{$color-type}-#{$weight}: #{$color};
+    }
+  }
+
+  /* Font size generating loop */
+  @each $screen-size, $font-size in $type-scale {
+    @if $screen-size == small {
+      @each $scale, $value in $font-size {
+        --fs-#{$scale}: #{$value};
+      }
+    } @else {
+      @include mq(medium) {
+        @each $scale, $value in $font-size {
+          --fs-#{$scale}: #{$value};
+        }
+      }
+    }
+  }
+
+  /* Color variables */
+
+  // Primary
+  --color-primary: var(--color-primary-500);
+  --color-primary-alt: var(--color-primary-300);
+
+  //Secondary
+  --color-secondary: var(---color-shade-black);
+
+
+
+  // Background & Surface
+  --color-background: var(--color-neutral-1);
+  --color-on-background: var(--color-shades-black);
+
+
+  --color-outline: var(--color-neutral-600);
+
+
+  /* Spacing variables */
+  --max-width: 77.5rem;
+
+
+  /* Typography variables */
+  --ff-primary: 'Nunito Sans', sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  /* Elevation variables */
+  --box-shadow-1: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --box-shadow-2: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  --box-shadow-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  --box-shadow-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px rgba(0, 0, 0, 0.3);
+  --box-shadow-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.3);
+
+
+  /* Animation variables */
+  --animation-slow: 0.7s cubic-bezier(0.7, 0, 0.3, 1);
+  --animation-normal: 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  --animation-fast: 0.2s cubic-bezier(0.7, 0, 0.3, 1);
+
+}

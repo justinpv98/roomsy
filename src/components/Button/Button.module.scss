@@ -1,0 +1,75 @@
+@mixin button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75em 1.5em;
+  
+    font-weight: 700;
+  
+    background-color: var(--background);
+    color: var(--color);
+    text-decoration: none;
+
+  }
+  
+  @mixin hasIcon {
+    &.hasLeadingIcon {
+      padding: .75em 1em;
+  
+      & > svg:first-child {
+        margin-right: 0.5rem;
+      }
+    }
+  
+    &.hasTrailingIcon {
+      padding: .75em 1em;
+  
+      & > svg:last-child {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  
+  @mixin primary {
+    @include button;
+    @include hasIcon;
+    --background: var(--color-primary);
+    --color: var(--color-background);
+
+    &:focus-visible {
+      outline: 2px solid var(--color-neutral-900);
+    }
+  }
+  
+  @mixin secondary {
+    @include button;
+    @include hasIcon;
+    --background: var(--color-on-background);
+    --color: var(--color-background);
+  }
+
+
+  @mixin icon {
+    @include button;
+    background: transparent;
+    border: none;
+    color: currentColor;
+  }
+
+
+
+.primary {
+    @include primary;
+}
+
+.secondary {
+    @include secondary;
+}
+
+.icon {
+  @include icon;
+}

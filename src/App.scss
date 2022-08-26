@@ -1,0 +1,29 @@
+@use "./styles/abstracts/" as abstracts;
+@use "./styles/base" as base;
+
+@forward "./styles/abstracts/";
+@forward "./styles/base";
+@forward "./styles/vendors";
+
+
+*:focus-visible {
+  outline-color: var(--color-primary);
+  color: var(--color-shade-white);
+}
+
+body {
+  position: relative;
+  background: var(--color-background);
+}
+
+.sr-only {
+  @include abstracts.sr-only();
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--color-background) inset !important;
+}

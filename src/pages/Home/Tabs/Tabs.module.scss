@@ -1,0 +1,16 @@
+.locationContainer {
+    flex-basis: 16.666667%;
+    flex-shrink: 0;
+}
+
+.city {
+    font-size: var(--fs-400);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.region {
+    color: var(--color-neutral-500);
+    font-weight: 600;
+    cursor: pointer;
+}

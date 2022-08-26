@@ -1,0 +1,35 @@
+
+.cardContainer {
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+  }
+  
+  .image {
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .cardImageContainer {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .cardContent {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cardHeading {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .hoursAway {
+    color: var(--color-neutral-700);
+    font-weight: 600;
+  }
+  

@@ -1,0 +1,135 @@
+@use "../../App.scss" as *;
+
+.footer {
+  background-color: var(--color-shades-white);
+  border-top: 1px solid var(--color-neutral-100);
+  box-shadow: 0 0px 2px rgb(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 48px;
+}
+
+.cta {
+  display: none;
+
+  @include mq(large) {
+    display: block;
+  }
+}
+
+.emptyBlock {
+  @include mq(large) {
+    width: 10rem;
+  }
+}
+
+.sitemapContainer {
+  border-top: 1px solid var(--color-neutral-100);
+  padding: 0;
+
+  @include mq(large) {
+    border: 1px solid var(--color-neutral-100);
+    padding: 0 2rem;
+  }
+}
+
+.footerHeader {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 2rem auto;
+}
+
+.sitemap {
+  display: flex;
+  max-width: var(--max-width);
+  margin: 0 auto 0 auto;
+
+  @include mq(medium){
+    padding: 0 2rem;
+    margin: 2rem auto;
+  }
+
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  row-gap: 1.5rem;
+}
+
+.header {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.link {
+  color: var(--color-neutral-500);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.attributionWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-size: var(--fs-200);
+
+  @include mq(medium) {
+    padding: 2rem 2rem;
+  }
+
+  @include mq(large) {
+    padding: 2rem 0;
+  }
+}
+
+.accordion {
+    width: 100%;
+}
+
+.accordionItem {
+    width: 100%;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid var(--color-neutral-100);
+  padding: 1.25rem 2rem;
+  font-size: var(--fs-300);
+  font-weight: 800;
+  text-transform: uppercase;
+
+  svg {
+    color: var(--color-neutral-300);
+  }
+
+}
+
+.accordionPanel:not([hidden]){
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: .5rem 2rem;
+}
+
+.attributionContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  @include mq(large) {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+}

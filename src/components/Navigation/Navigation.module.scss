@@ -1,0 +1,54 @@
+@use '../../App.scss' as *;
+
+.header {
+  display: none;
+  padding: 1.5rem 1rem;
+  background: var(--color-neutral-50);
+
+  @include mq(large){
+    display: block;
+    padding: 1.5rem 2rem;
+  }
+
+
+}
+
+.logo {
+
+    height: 48px;
+}
+
+.emptyBlock {
+  width: 180px;
+}
+
+.maxWidthContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.languagesButton {
+  background-color: var(--color-neutral-150);
+  border-radius: 12px;
+  padding: .75em 1em;
+  margin-right: .5rem;
+}
+
+.navContainer {
+  display: flex
+}
+
+.nav {
+  display: flex;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 3rem;
+  font-weight: 700;
+  color: var(--color-neutral-600);
+}
